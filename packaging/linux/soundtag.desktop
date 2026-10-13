@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Soundtag
+GenericName=Audio Tag Editor
+Comment=Rediger metadata og cover i lydfiler
+Exec=Soundtag
+Icon=soundtag
+Terminal=false
+Categories=AudioVideo;Audio;
+Keywords=tag;id3;metadata;mp3;flac;wav;

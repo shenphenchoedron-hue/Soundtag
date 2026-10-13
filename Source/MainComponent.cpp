@@ -619,8 +619,9 @@ void MainComponent::resized()
 
     const int labelH = 17, fieldH = 28, gap = 4;
     int li = 0;
-    auto field = [&] (juce::Rectangle<int>& area, juce::Component& c, int h = fieldH)
+    auto field = [&] (juce::Rectangle<int>& area, juce::Component& c, int h = -1)
     {
+        if (h < 0) h = fieldH;
         labels[(size_t) li++].area = area.removeFromTop (labelH).withTrimmedLeft (1);
         area.removeFromTop (2);
         c.setBounds (area.removeFromTop (h));
